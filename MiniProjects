@@ -1,0 +1,19 @@
+Mini Project Client 1
+
+SELECT district, COUNT(city_name) AS city_count
+FROM cities
+WHERE district IS NOT NULL AND district != ''
+GROUP BY district
+ORDER BY city_count DESC
+LIMIT 5;
+
+
+This query:
+
+Filters out null or empty district values.
+Groups the cities by district.
+Counts the number of cities in each district.
+Orders the result by the count of cities in descending order.
+Limits the result to the top 5 districts.
+
+Mini Project Client 2
